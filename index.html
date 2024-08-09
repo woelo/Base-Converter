@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#convert">Convert</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="https://woelo.github.io/Website-Profil/">AhmadR</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Welcome to Number Converter</h1>
+        <p>Convert between Binary, Decimal, and Hexadecimal numbers easily.</p>
+    </section>
+
+    <section id="convert">
+        <h2>Converter</h2>
+        <div class="converter-box">
+            <label for="inputNumber">Enter Number:</label>
+            <input type="text" id="inputNumber" placeholder="Enter binary, decimal, or hexadecimal">
+            
+            <label for="inputType">Select Input Type:</label>
+            <select id="inputType">
+                <option value="binary">Binary</option>
+                <option value="decimal">Decimal</option>
+                <option value="hexadecimal">Hexadecimal</option>
+            </select>
+            
+            <button onclick="convertNumber()">Convert</button>
+
+            <h3>Results:</h3>
+            <p id="binaryResult">Binary: </p>
+            <p id="decimalResult">Decimal: </p>
+            <p id="hexadecimalResult">Hexadecimal: </p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>This tool helps you convert between different numeral systems including binary, decimal, and hexadecimal.</p>
+      <p>®Ahmadr</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
